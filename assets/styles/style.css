@@ -31,13 +31,13 @@ body.pg-loaded > .inner {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 20px;
-  color: #818181;
+  color: #00d1ff;
   display: block;
 }
 
 /* Style links on mouse-over */
 .sidebar a:hover {
-  color: #f1f1f1;
+  color: #00d1ff;
 }
 
 #peerCount {
@@ -200,7 +200,7 @@ body.pg-loaded > .inner {
 }
 
 div.iconSelected {
-  background-color: ivory;
+  background-color: #212529;
   border: 1px solid slategray;
 }
 
@@ -214,7 +214,7 @@ div.loadingText {
 }
 
 div.sidebar svg {
-  color: #05239e;
+  color: #5D5D5D;
 }
 
 #tableTransactionsForAll_filter {
@@ -423,7 +423,7 @@ div.noAddressWrapper {
 }
 
 .etho-red {
-  background-color: #05239e !important;
+  background-color: #000000 !important;
 }
 
 #chartMarketPrice {
