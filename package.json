@@ -1,7 +1,7 @@
 {
-  "name": "Ether1Wallet",
+  "name": "ATHDesktopWallet",
   "version": "0.3.0",
-  "description": "Desktop wallet for Ether1 currency",
+  "description": "Desktop wallet for ATH currency",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
@@ -9,7 +9,7 @@
     "dist": "build"
   },
   "build": {
-    "appId": "Ether1DesktopWallet",
+    "appId": "ATHDesktopWallet",
     "files": [
       "modules/*",
       "assets/**/*",
@@ -43,13 +43,13 @@
       ]
     }
   },
-  "repository": "https://github.com/taeguscromis/Ether1DesktopWallet",
+  "repository": "https://github.com/kek-mex/ATHDesktopWallet",
   "keywords": [
-    "Ether1",
+    "ATH",
     "Desktop",
     "Wallet"
   ],
-  "author": "Ether1",
+  "author": "ATH",
   "license": "CC0-1.0",
   "dependencies": {
     "@unibeautify/beautifier-js-beautify": "^0.4.0",
@@ -57,7 +57,7 @@
     "app-root-path": "^2.1.0",
     "electron-storage": "^1.0.7",
     "fs-extra": "^7.0.1",
-    "handlebars": "^4.1.0",
+    "handlebars": "^4.1.2",
     "moment": "^2.23.0",
     "nedb": "^1.8.0",
     "single-instance": "0.0.1"

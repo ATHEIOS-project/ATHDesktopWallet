@@ -4,7 +4,7 @@ class Wallets {
   constructor() {
     this.addressList = [];
 
-    $.getJSON("https://min-api.cryptocompare.com/data/price?fsym=ETHO&tsyms=USD", function (price) {
+    $.getJSON("https://min-api.cryptocompare.com/data/price?fsym=ATH&tsyms=USD", function (price) {
       EthoWallets._setPrice(price.USD);
     });
   }
@@ -114,7 +114,7 @@ class Wallets {
       $(document).trigger("render_wallets");
       EthoWallets.enableButtonTooltips();
 
-      $("#labelSumDollars").html(vsprintf("/ %.2f $ / %.4f $ per ETHO", [
+      $("#labelSumDollars").html(vsprintf("/ %.2f $ / %.4f $ per ATH", [
         data.sumBalance * EthoWallets._getPrice(),
         EthoWallets._getPrice()
       ]));

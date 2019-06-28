@@ -16,8 +16,8 @@
   </button>
   <div id="sumBalance">
     <span class="sumBalance" id="labelSumBalance">{{sumBalance}}</span>
-    <span class="sumCurrency" id="labelSumCurrency">ETHO</span>
-    <span class="sumDollars" id="labelSumDollars">/ 0.00 $ / 0.00 $ per ETHO</span></div>
+    <span class="sumCurrency" id="labelSumCurrency">ATH</span>
+    <span class="sumDollars" id="labelSumDollars">/ 0.00 $ / 0.00 $ per ATH</span></div>
 </div>
 <div id="addressList" class="{{#if addressData.length}}walletsWrapper{{else}}noWalletsWrapper{{/if}}">
   {{#if addressData.length}}
@@ -41,9 +41,9 @@
             <td>
               <span class="textAddress">{{address}}</span></td>
             <td>
-              <button type="button" class="btn btn-etho btnShowAddressTransactions" data-wallet="{{address}}">
+              <!--<button type="button" class="btn btn-etho btnShowAddressTransactions" data-wallet="{{address}}">
                 <i class="fas fa-exchange-alt"></i>
-              </button>
+              </button>-->
               <button type="button" class="btn btn-etho btnShowQRCode" data-address="{{address}}">
                 <i class="fas fa-qrcode"></i>
               </button>

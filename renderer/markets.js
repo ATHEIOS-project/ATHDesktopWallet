@@ -7,9 +7,9 @@ class Markets {
     EthoMainGUI.renderTemplate("markets.html", {});
     $(document).trigger("render_markets");
 
-    $.getJSON("https://api.coingecko.com/api/v3/coins/ether-1?sparkline=true", function (data) {
-      $("#ETHOToUSD").html(data.market_data.current_price.usd.toFixed(5) + " $");
-      $("#ETHOToBTC").html(data.market_data.current_price.btc.toFixed(8)) + " sats";
+    $.getJSON("https://api.coingecko.com/api/v3/coins/atheios?sparkline=true", function (data) {
+      $("#ATHToUSD").html(data.market_data.current_price.usd.toFixed(5) + " $");
+      $("#ATHToBTC").html(data.market_data.current_price.btc.toFixed(8)) + " sats";
       $("#marketcap").html(data.market_data.market_cap.usd.toFixed(0) + " $ (" + data.market_cap_rank + ")");
       $("#dailyVolume").html(data.market_data.total_volume.usd.toFixed(0) + " $");
 
@@ -29,7 +29,7 @@ class Markets {
               fill: true,
               borderWidth: 3,
               pointRadius: 0,
-              borderColor: "#7A1336"
+              borderColor: "#05239e"
             }
           ]
         },
