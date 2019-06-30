@@ -1,4 +1,4 @@
-# Ether1 Desktop Wallet
+# ATH Desktop Wallet
 
 **Clone and run to see it in action.**
 
