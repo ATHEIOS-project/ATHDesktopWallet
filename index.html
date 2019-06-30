@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Ether-1 Desktop Wallet</title>
+    <title>ATH Desktop Wallet</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/materialize.min.css">
     <link rel="stylesheet" href="./assets/styles/datatables.min.css">
@@ -50,14 +50,14 @@
 
     <!-- Insert this line after script imports -->
     <script>
-      if (window.module) 
+      if (window.module)
         module = window.module;
     </script>
   </head>
 
   <body>
     <script>
-      var loading_screen = pleaseWait({logo: "assets/images/logo.png", backgroundColor: '#000000', loadingHtml: "<div class='spinner'><div class='bounce bounce1'></div><div class='bounce bounce2'></div><div class='bounce bounce3'></div></div><div class='loadingText'>Starting the node and loading app, please wait...</div>"});
+      var loading_screen = pleaseWait({logo: "assets/images/logo.png", backgroundColor: '#000000', loadingHtml: "<div class='spinner'><div class='bounce bounce1'></div><div class='bounce bounce2'></div><div class='bounce bounce3'></div></div><div class='loadingText'>Starting the ATH node and loading app, please wait...</div>"});
 
       $(document).on("onGethReady", function () {
         loading_screen.finish();
@@ -85,11 +85,11 @@
             <i class="fas fas fa-share-square fa-2x"></i>
           </a>
         </div>
-        <div class="sidebarIconWrapper" id="mainNavBtnTransactionsWrapper" data-tippy="Transactions" data-tippy-delay="500">
+        <!--<div class="sidebarIconWrapper" id="mainNavBtnTransactionsWrapper" data-tippy="Transactions" data-tippy-delay="500">
           <a class="sidebarIcon" id="mainNavBtnTransactions" href="#">
             <i class="fas fa-exchange-alt fa-2x"></i>
           </a>
-        </div>
+        </div>-->
         <div class="sidebarIconWrapper" id="mainNavBtnMarketsWrapper" data-tippy="Markets" data-tippy-delay="500">
           <a class="sidebarIcon" id="mainNavBtnMarkets" href="#">
             <i class="fas fa-poll fa-2x"></i>
@@ -124,7 +124,7 @@
     </div>
 
     <!-- The modal for general error -->
-    <div id="dlgGeneralError" class="modalDialog" data-izimodal-title="Application Error" data-izimodal-subtitle="Something went wrong, don't kill the fish..." data-izimodal-icon="icon-home">
+    <div id="dlgGeneralError" class="modalDialog" data-izimodal-title="Application Error" data-izimodal-subtitle="Something went wrong, please wait..." data-izimodal-icon="icon-home">
       <div class="modalBody">
         <div class="form-group">
           <span id="txtGeneralError"></span>
@@ -145,16 +145,19 @@
     </div>
 
     <!-- The modal for about info -->
-    <div id="dlgAboutInfo" class="modalDialog" data-izimodal-title="About Ether1 Wallet" data-izimodal-icon="icon-home">
+    <div id="dlgAboutInfo" class="modalDialog" data-izimodal-title="About ATH Wallet" data-izimodal-icon="icon-home">
       <div class="modalBody">
         <div class="aboutInfo">
-          <div class="infoText" id="aboutInfoWallet">Ether1 Wallet</div>
+          <div class="infoText" id="aboutInfoWallet">ATH Wallet</div>
           <div class="infoText" id="aboutInfoGitHub">GitHub:
-            <a id="urlOpenGitHub" href="https://github.com/taeguscromis/Ether1DesktopWallet">https://github.com/taeguscromis/Ether1DesktopWallet</a>
+            <a id="urlOpenGitHub" href="https://github.com/athofficial/ATHDesktopWallet">https://github.com/athofficial/ATHDesktopWallet</a>
           </div>
           <div class="infoText" id="aboutInfoLicence">Made under
             <a id="urlOpenLicence" href="https://choosealicense.com/licenses/gpl-3.0">GPL v3.0</a>
             licence
+          </div>
+          <div class="infoText" id="aboutInfoLicence">Forked from:
+            <a id="urlOpenGitHub" href="https://github.com/Ether1Project/Ether1DesktopWallet">Ether1Project/Ether1DesktopWallet</a>
           </div>
           <div class="infoText" id="aboutInfoVersion">Version:
             <span id="versionNumber"></span></div>

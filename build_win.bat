@@ -1,2 +1,2 @@
 @ECHO OFF
-call npm run dist
+call npm run pack

@@ -16,7 +16,7 @@ class Geth {
     }
 
     if (this.logGethEvents) {
-      this.logStream = fs.createWriteStream(path.join(app.getPath("userData"), "gethlog.txt"), {flags: "a"});
+      this.logStream = fs.createWriteStream(path.join(app.getPath("userData"), "gathlog.txt"), {flags: "a"});
     }
 
     if (appRoot.path.indexOf("app.asar") > -1) {
@@ -50,7 +50,7 @@ class Geth {
     // get the path of get and execute the child process
     try {
       this.isRunning = true;
-      const gethPath = path.join(this.binaries, "geth");
+      const gethPath = path.join(this.binaries, "gath");
       this.gethProcess = child_process.spawn(gethPath, [
         "--ws",
         "--wsorigins",
@@ -58,19 +58,19 @@ class Geth {
         "--wsaddr",
         "127.0.0.1",
         "--wsport",
-        "8546",
+        "8697",
         "--wsapi",
         "admin,db,eth,net,miner,personal,web3",
         "--networkid",
-        "1313114"
+        "11235813"
       ]);
 
       if (!this.gethProcess) {
-        dialog.showErrorBox("Error starting application", "Geth failed to start!");
+        dialog.showErrorBox("Error starting application", "Gath failed to start!");
         app.quit();
       } else {
         this.gethProcess.on("error", function (err) {
-          dialog.showErrorBox("Error starting application", "Geth failed to start!");
+          dialog.showErrorBox("Error starting application", "Gath failed to start!");
           app.quit();
         });
         this.gethProcess.on("close", function (err) {
@@ -96,7 +96,7 @@ class Geth {
     this.isRunning = false;
 
     if (os.type() == "Windows_NT") {
-      const gethWrapePath = path.join(this.binaries, "WrapGeth.exe");
+      const gethWrapePath = path.join(this.binaries, "WrapGath.exe");
       child_process.spawnSync(gethWrapePath, [this.gethProcess.pid]);
     } else {
       this.gethProcess.kill("SIGTERM");
