@@ -1,6 +1,6 @@
 {
   "name": "ATHDesktopWallet",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "Desktop wallet for ATH currency",
   "main": "main.js",
   "scripts": {
@@ -43,7 +43,7 @@
       ]
     }
   },
-  "repository": "https://github.com/kek-mex/ATHDesktopWallet",
+  "repository": "https://github.com/athofficial/ATHDesktopWallet",
   "keywords": [
     "ATH",
     "Desktop",

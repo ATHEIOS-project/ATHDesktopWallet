@@ -1,6 +1,6 @@
 .btn-etho {
     color: #ffffff;
-    background-color: #000000;
+    background-color: #007fb1;
     border-color: #105cd1;
   }
 
@@ -10,8 +10,8 @@
   .btn-etho.active,
   .open .dropdown-toggle.btn-etho {
     color: #ffffff;
-    background-color: #05419e;
-    border-color: #05419e;
+    background-color: #007fb1;
+    border-color: #007fb1;
   }
 
   .btn-etho:active,

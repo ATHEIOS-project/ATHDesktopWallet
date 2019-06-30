@@ -43,7 +43,7 @@ body.pg-loaded > .inner {
 #peerCount {
   bottom: 0;
   height: 20px;
-  color: #aaa;
+  color: #ffffff;
   position: absolute;
   font-size: 0.8em;
   padding-left: 5px;
@@ -57,8 +57,8 @@ body.pg-loaded > .inner {
   left: 120px;
   right: 0;
   bottom: 0;
-  background-color: #111;
-  border-top: 1px solid #111;
+  background-color: #212529;
+  border-top: 1px solid #212529;
 }
 
 #mainContent
@@ -178,12 +178,12 @@ body.pg-loaded > .inner {
 
 .modalDialog {
   display: none;
-  border-bottom: 3px solid #05239e !important;
+  border-bottom: 3px solid #007fb1 !important;
   border-radius: 0px !important;
 }
 
 .iziModal-header {
-  background: #05239e !important;
+  background: #007fb1 !important;
 }
 
 #walletsToolbar {
@@ -214,7 +214,7 @@ div.loadingText {
 }
 
 div.sidebar svg {
-  color: #5D5D5D;
+  color: #007fb1;
 }
 
 #tableTransactionsForAll_filter {
@@ -243,7 +243,7 @@ div.sidebar svg {
 }
 
 .dataTables_scrollBody .transactionsBlockNum {
-  color: #f92472;
+  color: #212529;
   cursor: pointer;
 }
 
@@ -292,7 +292,7 @@ div.sidebar svg {
 }
 
 .txInfo label + label {
-  color: #7A1336;
+  color: #007fb1;
   margin-left: 0px;
 }
 
@@ -305,7 +305,7 @@ div.sidebar svg {
 #toAddressInfo,
 #valueToSendInfo,
 #feeToPayInfo {
-  color: #7A1336;
+  color: #007fb1;
   margin-left: 5px;
   margin-right: 5px;
 }
@@ -423,7 +423,7 @@ div.noAddressWrapper {
 }
 
 .etho-red {
-  background-color: #000000 !important;
+  background-color: #007fb1 !important;
 }
 
 #chartMarketPrice {

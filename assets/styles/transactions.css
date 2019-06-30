@@ -41,11 +41,11 @@ fieldset[disabled] .dt-button:active,
 .dt-button[disabled].active,
 fieldset[disabled] .dt-button.active {
   background-color: #308968 !important;
-  border-color: #450118 !important; 
+  border-color: #450118 !important;
 }
 
 .dt-button .badge {
-  color: #7A1336 !important;
+  color: #007fb1 !important;
   background-color: #ffffff !important;
 }
 

@@ -6,12 +6,12 @@ SyncProgress = new ProgressBar.Line("#syncProgress", {
   strokeWidth: 6,
   easing: "easeInOut",
   duration: 1400,
-  color: "#7A1336",
+  color: "#007fb1",
   trailColor: "#eee",
   trailWidth: 1,
   text: {
     style: {
-      color: "#bbb",
+      color: "#ffffff",
       position: "absolute",
       left: "50%",
       top: "-1px",

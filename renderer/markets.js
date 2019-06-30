@@ -25,11 +25,11 @@ class Markets {
           datasets: [
             {
               data: data.market_data.sparkline_7d.price,
-              backgroundColor: "rgb(122,19,54,0.1)",
-              fill: true,
+              backgroundColor: "rgb(9,186,201)",
+              fill: false,
               borderWidth: 3,
               pointRadius: 0,
-              borderColor: "#05239e"
+              borderColor: "#007fb1"
             }
           ]
         },
