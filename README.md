@@ -10,7 +10,7 @@ To clone and run this repository you'll need [Git](https://git-scm.com) and [Nod
 
 ```bash
 # Clone this repository
-git clone https://github.com/kek-mex/ATHDesktopWallet
+git clone https://github.com/athofficial/ATHDesktopWallet
 # Go into the repository
 cd ATHDesktopWallet
 # Install dependencies
